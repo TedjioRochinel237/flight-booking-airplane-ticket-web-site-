@@ -1,0 +1,277 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primaryColor: rgba(86, 97, 198, 0.847);
+}
+header {
+  height: 160px; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh
+}/*# sourceMappingURL=project.css.map */
+/* REGISTRATION BAR */
+.registration-bar {
+  height: 60px;
+  width: 100%;
+  background: rgba(86, 97, 198, 0.847);
+}
+.btn-sign-in {
+  padding-left: 10px;
+  padding-right: 7px;
+  border-radius: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-log-in {
+  padding-left: 10px;
+  padding-right: 7px;
+  border-radius: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.logo {
+  float: left;
+}
+.registration-content {
+  line-height: 60px;
+  float: right;
+}
+ .btn-sign-in:hover{
+  background: var(--primaryColor);
+}
+.btn-log-in:hover {
+  background: var(--primaryColor);
+}
+.logo-items {
+  display: inline-block;
+} 
+.logo-items1 {
+  display: inline-block;
+  list-style-type: none;
+  color: blue;
+  font-size: 50px;
+  letter-spacing: 15px;
+  animation: flash 1.4s linear infinite;
+
+}
+@keyframes flash {
+  0% {
+    color: blue;
+    text-shadow: none;
+  }
+  90% {
+    color: blue;
+    text-shadow: none;
+  }
+  100% {
+    color: var(--primaryColor);
+    text-shadow: 0 0 7px var(--primaryColor), 0 0 50px rgb(74, 74, 204);
+  }
+}
+.logo-items1:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.logo-items1:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.logo-items1:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.logo-items1:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.logo-items1:nth-child(5) {
+  animation-delay: 0.5s;
+}
+/* NAVIGATION */
+nav {
+  float: right;
+  position: relative;
+  width: 100%;
+  
+  
+
+  
+}
+.navbar {
+  
+  display: inline-block; 
+  float: right;  
+}
+.items {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+ 
+
+}
+.items a {
+  font-weight: bold;
+  text-decoration: none;
+
+}
+.items a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  margin: 5px auto 0 auto;
+  height: 2px;
+  border-radius: 2px;
+  border-radius: 2px;
+  background: var(--primaryColor);
+  transition: width 0.2s ease-out;
+}
+.items a:hover::after {
+  width: 100%;
+}
+.btn-toggle-container {
+  cursor: pointer;
+  display: none; 
+  float: right; 
+}
+
+@media screen and (max-width: 650px) {
+  .btn-toggle-container {
+    display: block;
+  }
+  nav {
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .navbar {
+    
+    display: block;
+    background: var(--primaryColor);
+  }
+}
+/* main image
+.bg-image {
+  background-image: url('img');
+  background-position: center;
+  height: 700px;
+  width: 100%;
+}
+.btn-sign-in {
+  justify-content: center;
+}
+.bg-image-content {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.items1 {
+  margin-right: 30px;
+  
+}
+.logo-patner-ship {
+  justify-content: center;
+} */
+ /* réservations */
+ body {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+.booking-form {
+  margin-top: 20px;
+  background-color: var(--primaryColor);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #333;
+}
+.form-control, .form-select {
+  margin-bottom: 10px;
+}
+.btn-search {
+  background-color: #333;
+  color: white;
+  width: 100%;
+}
+/* destinations */
+body {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+.destination {
+  margin-top: 50px;
+}
+.destination-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.destination-card img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+.destination-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.destination-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px;
+}
+.destination-name {
+  font-weight: bold;
+  margin: 0;
+}
+.destination-price {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffa500;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.shrink {
+  transform: scale(0.9);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* carousel testimony */
+.testimony {
+  height: 300px;
+}
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+.carousel-item.active {
+  display: flex;
+  justify-content: center;
+}
+.testimonial-card {
+  max-width: 800px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}

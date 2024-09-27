@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <title>ARIAL</title>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <div class="container-fluid">
+        <div class="registration-bar">
+            <div class="registration-content">
+                <button class="btn-sign-in">
+                    <i class="fa-solid fa-user fa-xxl"></i>
+                    Crée un compte
+                </button>
+                <button class="btn-log-in">
+                    <i class="fa-solid fa-unlock-keyhole fa-xxl"></i>
+                    SE CONNECTER
+                </button>
+            </div>
+        </div>
+        <header>
+            <div class="logo"><img src="img/favicon-96x96.png" alt="logo">
+            <ul class="logo-items">
+                <li class="logo-items1">A</li>
+                <li class="logo-items1">R</li>
+                <li class="logo-items1">I</li>
+                <li class="logo-items1">A</li>
+                <li class="logo-items1">L</li>
+            </ul>
+            </div>
+            <nav class="navbar navbar-default">
+                <ul class="navbar">
+                    <li class="items"><a href="#" class="item1 i">ACCUEIL</a></li>
+                    <li class="items"><a href="#" class="item2 i">RESERVATIONS</a></li>
+                    <li class="items"><a href="#" class="item3 i">RESERVATIONS-ENREGISTRER</a></li>
+                    <li class="items"><a href="#" class="item4 i">CONTACT</a></li>
+                    <li class="items"><a href="#" class="item5 i">NEWSLETTER</a></li>
+            
+
+                </ul>
+                <div class="btn-toggle-container"><i class="fa-solid fa-bars fa-xxxl" id="menu-logo"></i></i></div>
+            </nav>
+        </header>
+        <!-- <div>
+            <section id="main-img">
+                <div class="bg-image" style="background-image: url('img/main-image.jpg') center;">
+                    <div class="bg-image-content">
+
+                        <a href="#" class="btn-sign-in">Crée votre compte</a>
+                        <h2>ET fête votre</h2>
+                        <a href="#" class="btn-booking">Réservation</a>
+                        <h2>En toute sécurité</h2>
+                    </div>
+                    
+                </div>
+
+            </section>
+        </div> -->
+            
+
+        </div>
+        <section class="carousel">
+            
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <form class="booking-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="departureCity" class="form-label">Ville de départ</label>
+                            <input type="text" class="form-control" id="departureCity" placeholder="Paris, Milan, ...">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="arrivalCity" class="form-label">Ville d'arrivée</label>
+                            <input type="text" class="form-control" id="arrivalCity" placeholder="Paris, Milan, ...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="departureDate" class="form-label">Date de départ</label>
+                            <input type="date" class="form-control" id="departureDate">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="returnDate" class="form-label">Date de Retour</label>
+                            <input type="date" class="form-control" id="returnDate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="adults" class="form-label">Nombre d'adultes</label>
+                            <select class="form-select" id="adults">
+                                <option value="0">0 Adulte</option>
+                                <option value="1">1 Adulte</option>
+                                <option value="2">2 Adultes</option>
+                                <option value="3">3 Adultes</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="children" class="form-label">Nombre d'enfants</label>
+                            <select class="form-select" id="children">
+                                <option value="0">0 Enfant</option>
+                                <option value="1">1 Enfant</option>
+                                <option value="2">2 Enfants</option>
+                                <option value="3">3 Enfants</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="category" class="form-label">Catégorie</label>
+                            <select class="form-select" id="category">
+                                <option>Classe Economique</option>
+                                <option>Classe Affaires</option>
+                                <option>Première Classe</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button type="submit" class="btn btn-search">Lancer la recherche</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class=" logo-patner-ship bg-primary" style="margin-top: 20px;">
+        <div class=" patner-ship-content d-inline ">
+            <div class="d-inline p-2 logo1 items1"><img src="logo 2/android-icon-96x96.png" alt="camairco" class="rounded"></div>
+            <div class="d-inline p-2 logo2 items1"><img src="logo 2/icon-96x96.png" alt="go-voyage" class="rounded-circle"></div>
+            <div class="d-inline p-2 logo3 items1"><img src="logo 2/jicon-96x96.png" alt="travel-agency" class="rounded-circle"></div>
+            <div class="d-inline p-2 logo4 items1"><img src="logo 2/k-icon-96x96.png" alt="ethiopia air-line" class="rounded mx-auto"></div>
+    
+        </div>
+
+    </div>
+    <section class="destination">
+    
+
+
+    <div class="container">
+        <h2 class="text-center mb-4">Nous proposons différentes destinations pour découvrir le monde !</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="destination-card" onclick="pulseShrink(this)">
+                    <img src="img/2.istockphoto-909414338-1024x1024.jpg" alt="Shanghai">
+                    <div class="destination-price">Dès 2000€</div>
+                    <div class="destination-info">
+                        <p class="destination-name">Shanghai</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="destination-card" onclick="pulseShrink(this)">
+                    <img src="img/3.images.jpeg" alt="Washington">
+                    <div class="destination-price">Dès 1800€</div>
+                    <div class="destination-info">
+                        <p class="destination-name">Washington</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="destination-card" onclick="pulseShrink(this)">
+                    <img src="img/4.luca-bravo-TaCk3NspYe0-unsplash.jpg" alt="Newyork">
+                    <div class="destination-price">Dès 1900€</div>
+                    <div class="destination-info">
+                        <p class="destination-name">Newyork</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="destination-card" onclick="pulseShrink(this)">
+                    <img src="img/5.image_1648914320085.webp" alt="Douala">
+                    <div class="destination-price">Dès 1000€</div>
+                    <div class="destination-info">
+                        <p class="destination-name">Douala</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="destination-card" onclick="pulseShrink(this)">
+                    <img src="img/6. download.jpg" alt="Cotonou">
+                    <div class="destination-price">Dès 1000€</div>
+                    <div class="destination-info">
+                        <p class="destination-name">Cotonou</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="destination-card" onclick="pulseShrink(this)">
+                    <img src="img/8.download (4).jpeg " alt="Abidjan">
+                    <div class="destination-price">Dès 1000€</div>
+                    <div class="destination-info">
+                        <p class="destination-name">Abidjan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </section>
+    <section class="testimony">
+        
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">ILS TÉMOIGNENT</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card p-4">
+                        <p class="mb-0">La meilleure agence de voyages au Cameroun ! Quand les compagnies n'avaient plus de solutions, CAMAIRCO a réussi à nous faire voyager (toute une famille) en pleine pandémie, et à des prix plus que convenables, le tout à distance et rapidement !</p>
+                        <p class="text-end mt-3 mb-0"><strong>Vanessa</strong>, Cliente « digitale » depuis Paris</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card p-4">
+                        <p class="mb-0">Jusque là je n'ai pu qu'apprécier toutes les prestations qui ont été réalisées pour moi ou pour ma famille de la part Ethopia air line . C'est donc très chaleureusement que je vous la recommande.</p>
+                        <p class="text-end mt-3 mb-0"><strong>MG</strong>, Cliente depuis 8 ans</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card p-4">
+                        <p class="mb-0">A l'agence ils sont notamment très à l'écoute sur les détails du voyage qu'il se passe bien ou non (bagages absents, vol annulé ou retardé) et dans ce dernier cas sont force de propositions pour vous aider à être indemnisés ;). N'hésitez donc pas à faire appel à eux pour vos voyages!</p>
+                        <p class="text-end mt-3 mb-0"><strong>Henri</strong>, Client depuis 8 mois</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    
+    
+       
+
+
+
+            <!-- <div id="monCarousel" class="carousel slide" data-ride="carousel" style="max-width: 100%;">
+                <ol class="carousel-indicators">
+                    <li data-target="#moncarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#moncarousel" data-slide-to="1"></li>
+                    <li data-target="#moncarousel" data-slide-to="2"></li>
+                    <li data-target="#moncarousel" data-slide-to="3"></li>
+                    <li data-target="#moncarousel" data-slide-to="4"></li>
+                    <li data-target="#moncarousel" data-slide-to="5"></li>
+                    <li data-target="#moncarousel" data-slide-to="6"></li> 
+
+                </ol> -->
+                <!-- <div class="carousel-inner" role="listbox">
+
+                    <div class="item-active">
+                        <img src="img/1.kalen-emsley-Bkci_8qcdvQ-unsplash.jpg" alt="landscale in the world">
+                        <div class="carousel-caption">
+                            <h3>Paysage</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/2.istockphoto-909414338-1024x1024.jpg" alt="shangai in china">
+                        <div class="carousel-caption">
+                            <h3>Shangai</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/3.images.jpeg" alt="status of liberty">
+                        <div class="carousel-caption">
+                            <h3>La status de la liberté</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/4.luca-bravo-TaCk3NspYe0-unsplash.jpg" alt="newyork">
+                        <div class="carousel-caption">
+                            <h3>Newyork</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                    <img src="img/5.image_1648914320085.webp" alt="douala in cameroun">
+                    <div class="carousel-caption">
+                        <h3>Douala</h3>
+                    </div>
+                    </div>
+                <div class="item">
+                    <img src="img/6.download (2).jpeg" alt="Abidjan in ivory cost">
+                    <div class="carousel-caption">
+                        <h3>Abidjan</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/7.download (3).jpeg" alt="coutounou au benin">
+                    <div class="carousel-caption">
+                        <h3>Cotonou</h3>
+                    </div>
+                </div>
+                </div>
+                <a href="#monCarousel" class="left carousel-control" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a> 
+
+                <a href="#monCarousel" class="right carousel-control" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div> -->
+    
+        <section class="newsletter">
+        
+
+<head>
+    
+    <style>
+        .newsletter {
+            background-color: #f8f9fa;
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
+            min-height: 400px;  
+            margin: 0;
+        }
+        .subscription-form {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 100%;
+            max-width: 500px;
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #6c757d;
+        }
+        .btn-subscribe {
+            background-color: #4b5ebe;
+            border-color: #4b5ebe;
+        }
+        .btn-subscribe:hover {
+            background-color: #3f4fa3;
+            border-color: #3f4fa3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="subscription-form">
+                    <h2 class="text-center mb-4">Subscribe newsletter &<br>get latest news</h2>
+                    <form id="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email here" aria-label="Email" aria-describedby="subscribe-button" required>
+                            <button class="btn btn-subscribe text-white" type="submit" id="subscribe-button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`Thank you for subscribing with email: ${email}`);
+            this.reset();
+        });
+    </script>
+
+
+        </section> 
+
+        
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
